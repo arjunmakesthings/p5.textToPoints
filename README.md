@@ -5,7 +5,7 @@ John Mayer's words, inputted as text and outputted as x & y coordinates to make 
 
 
 # How To Use
-**Step 1: Add the textToPoints.js file to your program's root folder and include it in the HTML file.**
+**Step 1: Add the [textToPoints.js](https://github.com/arjunmakesthings/textToPoints/blob/main/textToPoints.js) file to your program's root folder and include it in the HTML file.**
 
 ```
 <script src="textToPoints.js"></script>
