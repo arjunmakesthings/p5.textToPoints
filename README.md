@@ -5,12 +5,16 @@ John Mayer's words, inputted as text and outputted as x & y coordinates to make 
 
 
 # How To Use
-**Step 1: Add the [textToPoints.js](https://github.com/arjunmakesthings/textToPoints/blob/main/textToPoints.js) file to your program's root folder and include it in the HTML file.**
+**Step 1: Download the [p5.textToPoints.js](https://github.com/arjunmakesthings/p5.textToPoints/blob/main/p5.textToPoints.js) file, add it to your program's root folder and include it in the HTML file.**
 
 ```
-<script src="textToPoints.js"></script>
+<script src="p5.textToPoints.js"></script> <!-- Include your addon library -->
 ```
+Or, you can include this (to fetch it via GitHub):
 
+```
+<script src="https://github.com/arjunmakesthings/p5.textToPoints/blob/main/p5.textToPoints.js"></script> <!-- Include your addon library -->
+```
 ---
 
 **Step 2: Declare an array and run the function with your desired parameters.**
