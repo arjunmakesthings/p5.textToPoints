@@ -5,7 +5,7 @@ let lettersToPoints; // Declaring a variable to store all the points.
 function setup() {
   createCanvas(500, 500);
   
-  // Now using the method from the addon library
+  // Now using the library
   lettersToPoints = convertLetterToPoints("hello person", 10, height / 2, 3, 85);
 }
 
