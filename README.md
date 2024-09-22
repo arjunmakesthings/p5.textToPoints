@@ -11,6 +11,12 @@ John Mayer's words, inputted as text and outputted as x & y coordinates to make 
 <script src="/textToPoints.js"></script>
 ```
 
+Alternatively, you can fetch it directly from GitHub via this URL: 
+
+```
+<script src="https://cdn.jsdelivr.net/gh/arjunmakesthings/p5.textToPoints/textToPoints.js"></script>
+```
+
 ---
 
 **Step 2: Declare an empty array in your sketch.js file.**
