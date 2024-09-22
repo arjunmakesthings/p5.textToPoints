@@ -5,27 +5,37 @@ John Mayer's words, inputted as text and outputted as x & y coordinates to make 
 
 
 # How To Use
-**Step 1: Download the [p5.textToPoints.js](https://github.com/arjunmakesthings/p5.textToPoints/blob/main/p5.textToPoints.js) file, add it to your program's root folder and include it in the HTML file.**
+**Step 1: Download the [textToPoints.js](https://github.com/arjunmakesthings/p5.textToPoints/blob/main/textToPoints.js) file, add it to your program's root folder and include it in the HTML file.**
 
 ```
-<script src="p5.textToPoints.js"></script> <!-- Include your addon library -->
+<script src="/textToPoints.js"></script>
 ```
-Or, you can include this (to fetch it via GitHub):
 
-```
-<script src="https://github.com/arjunmakesthings/p5.textToPoints/blob/main/p5.textToPoints.js"></script> <!-- Include your addon library -->
-```
 ---
 
-**Step 2: Declare an array and run the function with your desired parameters.**
+**Step 2: Declare an empty array in your sketch.js file.**
 
 ```
-lettersToPoints = convertLetterToPoints (string, xPos, yPos, [gridSize], [fontSize], [font], [horAlignment], [verAlignment])
+var lettersToPoints = []; 
 ```
+
+---
+
+**Step 3: Run the script by adding whatever parameters you want. The default are (optional paramters are marked with []).**
+
+```
+lettersToPoints = convertLetterToPoints(string, xPos, yPos, [maxWidth], [maxHeight], [gridSize], [fontSize], [font], [horAlignment], [verAlignment])
+```
+
+---
 
 The parameters are: 
 
 - string: the text you want to transform.
+- xPos: initial x-position of your text.
+- yPos: initial y-position of your text.
+- maxWidth: maximum width of text area, default is Infinity.
+- maxHeight: maximum height of text area, default is Infinity. 
 - gridSize: how far apart should the points be; smaller value = more points, less spaced out & vice-versa (default is 3).
 - fontSize: font size, default is 24.
 - font: the font you want to use, default is Arial.
@@ -33,13 +43,13 @@ The parameters are:
 - verAlignment: bertical alignment type, accepts all p5.textAlign modes, default is TOP.
 
 
-For example: 
+For example (with values): 
 
 `lettersToPoints = convertLetterToPoints("hello person", 10, height / 2, 3, 85);`
 
 ---
 
-**Step 3: Run through the declared array and draw. For example:** 
+**Step 4: Now this array stores x & y coordinates. You can run your drawing transformations like this:** 
 
 ```
   for (let i = 0; i < lettersToPoints.length; i++) {
@@ -54,7 +64,4 @@ The program above produces this:
 
 https://github.com/arjunmakesthings/textToPoints/assets/82059571/99d6aaca-dca2-48a5-962c-227aabf136ea
 
-
-
-  
-
+---
